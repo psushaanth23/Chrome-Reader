@@ -1,0 +1,30 @@
+ {
+  "manifest_version": 2,
+
+  "name": "Chrome Reader",
+  "description": "Reads the selected text on a page",
+  "version": "1.0",
+
+  "browser_action": {
+    //"default_icon": "icon.png",
+    //"default_ popup": "index.html",
+    "default_title": "Chrome Reader"
+  },
+  "background": {
+    "scripts": ["background.js"]
+    //"persistent": false
+  },
+  
+  //"content_scripts": [
+  //  {
+   //   "matches": ["http://*/*","https://*/*" ],
+      //"css": ["mystyles.css"],
+  //    "js": ["myScript.js"]
+  //  }
+  //],
+  "permissions": [
+    "contextMenus"
+    //"activeTab",
+    //"https://ajax.googleapis.com/"
+  ]
+}
